@@ -5,10 +5,10 @@ import Header from '../components/Header';
 
 describe('<Header />', () => {
   test('Should render correctly', () => {
+    // eslint-disable-next-line
     const component = renderer.create(
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>);
+      // eslint-disable-next-line
+      <BrowserRouter><Header /></BrowserRouter>);
 
     const tree = component.toJSON();
 
